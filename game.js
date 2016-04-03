@@ -1,10 +1,10 @@
 
 var game = new Phaser.Game(800, 600, Phaser.AUTO, '', { preload: preload, create: create, update: update });
-// TO allow cross domain CORS loading.
-game.load.crossOrigin = 'anonymous';
 
 function preload() {
-
+    // TO allow cross domain CORS loading.
+    game.load.crossOrigin = 'anonymous';
+    
     game.load.image('sky', 'assets/sky.png');
     game.load.image('ground', 'assets/platform.png');
     game.load.image('star', 'assets/star.png');
